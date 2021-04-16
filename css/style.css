@@ -1,0 +1,530 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&display=swap');
+*{font-family: Arial;}
+.header-master{
+    width: 100%;
+    height: 80vh;
+    background-image: url('../images/bg_01.png');
+    background-size: 100% 100%;
+}
+
+section.header-master header{
+    border-bottom: 1px solid rgba(0, 88, 0,0.14);
+    padding-bottom: 20px;
+}
+.logo{
+    float: left;
+    padding: 0 2%;
+    text-align: center;
+}
+.logo h2{
+    font-family: 'Caveat', cursive;
+    color: white;
+    font-size: 2em;
+}
+header nav.desktop{
+    position: relative;
+    top: 10px;
+    width: 50%;
+    text-align: center;
+    float: left;
+}
+nav.desktop ul{
+    list-style-type: none;
+}
+nav.desktop ul li{
+    margin: 0 15px;
+    color: white;
+}
+
+nav.desktop li.selected{
+    color: rgb(0, 88, 0);
+    position: relative;
+}
+li.selected > span{
+    position: absolute;
+    bottom: 0;
+    width: 18px;
+    height: 3px;
+    background: rgb(0, 88, 0);
+}
+nav.desktop ul li a{
+    text-decoration: none;
+    font-size: 14pt;
+    color: inherit;
+}
+.telefone-header{
+    width: 20%;
+    font-size: 14pt;
+    text-align: center;
+    color: white;
+    position: relative;
+    top: 10px;
+    float: left;
+}
+/************************************************MENU MOBILE*****************************************/
+.header-master header i{
+    float: right;
+    font-size: 32px;
+    color: white;
+    padding: 0 20px;
+    cursor: pointer;
+    display: none;
+}
+i nav.mobile{
+    width: 100%;
+    background-color: white;
+    position: absolute;
+    top: 42px;
+    left: 0;
+    font-size: 15px;
+    margin-top: 10px;
+    display: none;
+}
+i nav.mobile ul{
+    text-align: center;
+    list-style-type: none;
+}
+i nav.mobile ul li{
+    border-bottom: 2px solid #ccc;
+}
+.mobile a{
+    padding: 18px 0;
+    text-decoration: none;
+    color: #005a47;
+    display: block;
+}
+/********************************************FIM HEADER**********************************************/
+/*******************************************CONTENT-HEADER********************************************/
+.one{
+    margin-top: 90px;
+    width: 55%;
+}
+.one p:nth-child(1){
+    font-size: 1.75em;
+    color: rgb(0, 105, 0);
+    padding: 0 2%;
+    max-width: 487px;
+    text-align: left;
+}
+.one p:nth-child(2){
+    margin-top: 20px;
+    text-align: justify;
+    padding: 0 2%;
+    max-width: 400px;
+    font-size: 0.9em;
+}
+.one > form{
+    margin-top: 20px;
+}
+.one input[type=email]{
+    border: 2px solid #ccc;
+    border-radius: 20px;
+    width: 200px;
+    height: 40px;
+    line-height: 40px;
+    padding: 0 12px;
+    outline: 0;
+}
+
+.btn-primary{
+    border: 0;
+    background-color: #00daaa;
+    margin-left: 12px;
+    width: 280px;
+    cursor: pointer;
+    outline: 0;
+}
+.one > span{
+    padding: 0 2%;
+    margin-top: 15px;
+    display: block;
+}
+.two{
+    width: 45%;
+    margin-top: 40px;
+}
+.two img{
+    width: 50%;
+    padding: 1%;
+}
+/****************************************FIM CONTENT-HEADER*******************************************/
+/**************************************INICIO SESSAO DIFERENCIAIS*************************************/
+section.diferenciais{
+    margin-top: 70px;
+}
+.diferencial-single{
+    width:33.3%;
+    margin-bottom: 20px;
+    padding: 0 2%;
+}
+.diferencial-single img{
+    max-width: 100%;
+}
+.diferencial-single h2{
+    font-size: 1.6em;
+    margin: 20px 0;
+}
+.diferencial-single h2 > strong{
+    color: #7dd5b0;
+}
+/****************************************FIM SESSAO DIFERENCIAIS**************************************/
+/****************************************SESSAO SOBRE*************************************************/
+section.sobre{
+    margin-top: 60px;
+}
+section.sobre .container{
+    max-width: 1280px;
+}
+.sobre-1{
+    width: 60%;
+}
+.sobre-1 img{
+    width: 100%;
+}
+.sobre-2{
+    width: 40%;
+    padding: 0 40px;
+    z-index: 2;
+}
+.sobre-2 h2{
+    margin:15px 0;
+    color: #a9c4b8;
+    max-width: 500px;
+}
+.sobre-2 p{
+    max-width: 400px;
+}
+.sobre-2 h2 > strong{
+    color: rgb(0, 163, 155);
+}
+/***************************************FIM SESSAO SOBRE**********************************************/
+/***************************************SESSAO DEPOIMENTOS*************************************/
+section.depoimento{
+    width: 100%;
+    padding: 250px 2%;
+    background-image: url('../images/bg_02.png');
+    background-size: 100% 100%;
+    color: #2d2d2d;
+    text-align: center;
+    position: relative;
+    top: -110px;
+}
+.depoimento h2{
+    font-weight: normal;
+}
+.depoimento p{
+    margin-top: 10px;
+}
+/*********************************************FIM SESSAO DEPOIMENTOS******************************/
+/*********************************************SESSAO ETAPAS***************************************/
+section.etapas{
+    padding: 50px 0;
+}
+.etapas__one{
+    padding:0 2%;
+}
+section.etapas .container{
+    max-width: 1280px;
+}
+.etapas > h2{
+    font-size: 1.7em;
+    font-weight: normal;
+    text-align: center;
+    padding-bottom: 60px;
+}
+.etapas h2 > span{
+    color: #a9c4b8;
+}
+.etapa-single{
+    align-items: center;
+    flex-wrap: nowrap;
+}
+.etapa-single:nth-child(1) img{
+    max-width: 100%;
+}
+.etapa-single:nth-child(1) p{
+    width: 40%;
+    padding: 0 2%;
+    color: #03ca9f;
+}
+.etapa-single:nth-child(2){
+    display: flex;
+    flex-direction: row-reverse;
+}
+.etapa-single:nth-child(2) img{
+    max-width: 100%;
+}
+.etapa-single:nth-child(2) p{
+    width: 40%;
+    padding: 0 2%;
+}
+.etapa-single:nth-child(3) img{
+    max-width: 100%;
+    padding: 10px;
+}
+.etapa-single:nth-child(3) p{
+    width: 40%;
+}
+/**********************************ETAPA 2*********************************/
+.etapas__two{
+    margin-top: 20px;
+    padding: 0 2%;
+}
+.etapas__group-2{
+    margin-bottom: 40px;
+}
+.etapas__group-2 .circle{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 1px dashed #03ca9f;
+    position: relative;
+    float: left;
+}
+.line{
+    position: absolute;
+    top: 100px;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    height: 42px;
+    width: 1px;
+    background-color: #777;
+    z-index: 1;
+}
+.circle span{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2em;
+}
+.etapas__descricao{
+    float: left;
+    width: calc(100% - 100px);
+    padding: 0 2%;
+}
+.etapas__descricao h2{
+    font-size: 1.2em;
+    padding-bottom: 12px;
+    color: #03ca9f;
+}
+.etapas__descricao p{
+    font-weight:bold;
+    font-size:0.9em;
+}
+/*********************************************FIM SESSAO ETAPAS***************************************/
+/*********************************************SESSAO DIFERENCAS***************************************/
+section.diferencas{
+    width: 100%;
+}
+section.diferencas .container{
+    max-width: 500px;
+}
+.diferencas h2{
+    text-align: center;
+    font-weight: normal;
+}
+.diferencas h2 > span{
+    color:#03ca9f;
+    font-weight: bold;
+}
+.diferencas__single{
+    text-align: center;
+    margin: 20px auto;
+    padding: 0 2%;
+}
+.diferencas__single img{
+    width: 169px;
+    height: 49px;
+}
+.diferencas__single h2{
+    font-size: 2.2em;
+    height: 55px;
+}
+.item_diferencas_1{
+    position: relative;
+    margin: 10px 0;
+}
+.item_diferencas_2{
+    margin: 10px 0;
+}
+.line_1{
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    height: 2px;
+    background-color: #e89595;
+    transform: rotate(-2deg);
+    z-index: 2;
+}
+.diferencas__single:nth-child(1){
+    border-right: 2px solid #ccc;
+}
+.item_diferencas_1 span{
+    color: #a9c4b8;
+}
+.item_diferencas_2 span{
+    color: #7dd5b0;
+}
+/*******************************************FIM SESSAO DIFERENCAS*************************************/
+/*******************************************SESSAO CONTATO********************************************/
+section.contato{
+    width: 100%;
+    background-color: #98fcde;
+    padding: 60px 0;
+}
+section.contato > h2{
+    text-align: center;
+    padding-bottom: 40px;
+    color: rgb(0, 88, 0);
+    font-size: 2.3em;
+}
+.doutora{
+    text-align: center;
+}
+.doutora img{
+    max-width: 100%;
+    height: 300px;
+    border: 8px solid #52d1ab;
+    border-radius: 50%;
+}
+.doutora h3{
+    color: #004d3c;
+    margin-top: 10px;
+}
+
+.info__contato p{
+    margin-bottom: 20px;
+    color: #005a47;
+    font-size: 0.9em;
+}
+.info__contato form{
+    margin-top: 30px;
+}
+.info__contato form > .btn-primary{
+    margin-left: 0;
+}
+.info__contato form input[type=text], input[type=email]{
+    width: 80%;
+    height: 44px;
+    line-height: 44px;
+    padding: 0 10px;
+    border-radius: 20px;
+    outline: 0;
+    margin-bottom: 10px;
+    border:2px solid #ccc;
+}
+/************************************FIM SESSAO CONTATO*******************************************/
+footer{
+    widows: 100%;
+    color: white;
+    background-color: #005a47;
+    padding: 30px 6px;
+}
+footer h2{
+    font-size: 2.9em;
+    text-align: center;
+    font-family: 'Caveat', cursive;
+}
+footer p{
+    padding-bottom: 10px;
+    text-align: center;
+}
+@media screen and (max-width: 980px){
+    /*****************SESSAO HEADER*******************************/
+    header nav.desktop{
+        display: none;
+    }
+    .header-master header i{
+        display: block;
+    }
+    .telefone-header{
+        display:none;
+    }
+    .one{
+        width: 100%;
+        text-align: center;
+    }
+    .one p{
+        margin: 0 auto;
+    }
+    .one p:nth-child(1){
+        text-align: center;
+    }
+    .one p:nth-child(2){
+        text-align: center;
+    }
+    .one input{
+        display: block;
+        margin: 10px auto;
+    }
+    .two{
+        display:none
+    }
+    /*********************SESSAO DIFERENCIAIS*************************/
+    section.diferenciais{
+        padding-top: 95px;
+    }
+    .diferencial-single{
+        width: 100%;
+        text-align: center;
+    }
+    /********************SESSAO SOBRE*************************/
+    .sobre-1, .sobre-2{
+        width: 100%;
+    }
+    .sobre-2 h2, .sobre-2 p{
+        max-width: none;
+        padding-bottom: 10px;
+    }
+    /*********************SESSAO DEPOIMENTO************************/
+    section.depoimento{
+        position: initial;
+        background-size: cover;
+    }
+    /********************SESSAO ETAPAS**********************/
+    .etapas__one{
+        display: none;
+    }
+    .etapas__two{
+        width: 100%;
+    }
+    .etapas__group-2{
+        max-width: 80%;
+        margin: 40px auto;
+    }
+}
+@media screen and (max-width: 768px){
+    .etapas__descricao{
+        float: none;
+        width: 80%;
+        margin: 20px auto;
+    }
+    .etapas__group-2 .circle{
+        display: none;
+    }
+    .diferencas__single{
+        display: block;
+        width: 100%;
+    }
+    .diferencas__single:nth-child(1){
+        border: 0;
+    }
+    .item_diferencas_1{
+        padding: 0 5%;
+    }
+    .info__contato form input[type=text], input[type=email]{
+        width: 100%;
+    }
+    section.contato .doutora{
+        width: 100%;
+    }
+    .doutora{
+        padding-bottom: 20px;
+    }
+    section.contato .info__contato{
+        width: 100%;
+        text-align: center;
+    }
+}
